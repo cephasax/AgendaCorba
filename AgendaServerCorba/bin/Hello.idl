@@ -1,0 +1,11 @@
+module HelloApp{
+	interface Hello{
+		string sayHello();
+		string listarContatos();
+		string adicionarContato(in string contato);
+		string removerContato(in string contato);
+		string buscarContato(in string cpf);
+		string editarContato(in string cpf, in string contato);
+		oneway void shutdown();
+	};
+};
